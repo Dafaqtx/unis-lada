@@ -318,7 +318,7 @@ body
 	margin: 95px 0 60px 0
 
 	&__title
-		font-family: 'Open Sans', sans-serif
+		font-family: $default-font
 		font-weight: 600
 		line-height: 33px
 		max-width: 580px
@@ -342,7 +342,7 @@ body
 	&__desc
 		font-size: 14px
 		line-height: 23px
-		font-family: 'Open sans', sans-serif
+		font-family: $default-font
 		font-weight: 400
 		color: $text
 		margin-top: 25px
@@ -354,7 +354,7 @@ body
 		color: $text
 		font-size: 14px
 		line-height: 23px
-		font-family: 'Open sans', sans-serif
+		font-family: $default-font
 		font-weight: 600
 		max-width: 365px
 
@@ -362,7 +362,7 @@ body
 		color: #363738
 		font-size: 13px
 		line-height: 23px
-		font-family: 'Open sans', sans-serif
+		font-family: $default-font
 		font-weight: 400
 		max-width: 545px
 
@@ -372,7 +372,7 @@ body
 
 	&__title
 		color: $text
-		font-family: 'Open sans', sans-serif
+		font-family: $default-font
 		font-size: 24px
 		line-height: 33px
 		font-weight: 600
@@ -411,5 +411,39 @@ body
 
 	&__item
 		width: 350px
+
+/* call-taxi */
+
+.call-taxi
+	padding: 75px 0
+	background: #F6F8F7
+
+	&__title
+		font-family: $default-font
+		font-weight: 600
+		font-size: 24px
+		line-height: 33px
+		margin: 0
+
+	&__items
+		margin-top: 40px
+		
+	&__item
+		margin-right: 40px
+		flex: 1
+
+		&:last-child
+			margin-right: 0
+	
+	&__desc
+		color: $text
+		font-family: $default-font
+		font-size: 14px
+		line-height: 23px
+		font-weight: 400
+		margin-top: 25px
+
+		& a 
+			color: #EB2E2E
 
 	
