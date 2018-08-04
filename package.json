@@ -1,6 +1,6 @@
 {
   "name": "unis-lada",
-  "version": "4.0.1",
+  "version": "0.0.1",
   "description": "Юнис-лада - служба такси в Омске",
   "main": "index.js",
   "scripts": {

@@ -11,8 +11,47 @@ body
 	overflow-x: hidden
 	color: $text
 
-
 @import "media"
+
+.flex
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+
+	&__align-right
+		justify-content: flex-end
+
+	&__align-center
+		justify-content: center
+
+	&__align-justify
+		justify-content: space-between
+
+	&__align-spaced
+		justify-content: space-around
+
+	&__align-top
+		align-items: flex-start
+
+	&__align-bottom
+		align-items: flex-end
+
+	&__align-middle
+		align-items: center
+
+	&__align-stretch
+		align-items: stretch
+
+.container-wrap
+  width: 100%
+
+.container
+  max-width: 1140px
+  margin: auto
+  position: relative
+
+.column
+  padding: 0 15px
 
 
 /* header */
@@ -273,3 +312,96 @@ body
 	color: #363738
 	margin-right: 26px
 	border-bottom: 2px dotted
+
+/* why-we */
+.why-we
+	margin: 95px 0 60px 0
+
+	&__title
+		font-family: 'Open Sans', sans-serif
+		font-weight: 600
+		line-height: 33px
+		max-width: 580px
+		font-size: 24px
+		margin: 0
+	
+	&__items
+		margin-top: 50px
+
+	&__item
+		margin-right: 89px
+		flex: 1
+		min-width: 150px
+
+		&:last-child
+			margin-right: 0
+	
+	&__img
+		text-align: center
+
+	&__desc
+		font-size: 14px
+		line-height: 23px
+		font-family: 'Open sans', sans-serif
+		font-weight: 400
+		color: $text
+		margin-top: 25px
+
+	&__about
+		max-width: 1020px
+
+	&__about--left
+		color: $text
+		font-size: 14px
+		line-height: 23px
+		font-family: 'Open sans', sans-serif
+		font-weight: 600
+		max-width: 365px
+
+	&__about--right
+		color: #363738
+		font-size: 13px
+		line-height: 23px
+		font-family: 'Open sans', sans-serif
+		font-weight: 400
+		max-width: 545px
+
+
+.animation-block
+	margin-top: 70px
+
+	&__title
+		color: $text
+		font-family: 'Open sans', sans-serif
+		font-size: 24px
+		line-height: 33px
+		font-weight: 600
+		max-width: 505px
+
+	&__bg
+		text-align: center
+		position: relative
+		max-width: 1360px
+		margin: auto
+		top: -65px
+
+	&__element
+		position: absolute
+	
+	&__car-1
+		bottom: 265px
+		left: 180px
+
+	&__car-2
+		bottom: 270px
+		left: 685px
+
+	&__pin-1
+		top: 230px
+		left: 280px
+
+	&__pin-2
+		top: 180px
+		right: 250px
+
+	
