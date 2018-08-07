@@ -29,132 +29,136 @@
 
 <body>
 
-	<header class="page-header">
-		<div class="container">
-			<div class="row">
-				<div class="header__logo">
-					<img src="../img/header/logo.svg" alt="Юнис-лада">
+	<header class="page-header header">
+		<div class="container column">
+			<div class="header--wrapper flex flex__align-middle">
+				<div class="header__logo flex flex__align-middle">
+					<a href="/"><img src="img/header/logo.svg" alt="Юнис Лада"></a>
+					<span class="header__slogan">Всегда рядом</span>
 				</div>
-				<div class="header__beside">
-					Всегда рядом
-				</div>
-				<div class="header__tel">
-					<span class="tel__text">Звоните:</span>
-					<span class="tel__text--bold">60 60 60</span>
+				<div class="header__call flex flex__align-middle">
+					<span class="header__call-text">Звоните:</span>
+					<span class="header__call-text--bold">60 60 60</span>
 				</div>
 				<div class="header__sms">
-					<span class="sms__text">По смс:</span>
-					<span class="sms__text--bold">+7 (904) 320 80 80</span>
+					<span class="header__sms-text">По смс:</span>
+					<span class="header__sms-text--bold">+7 (904) 320 80 80</span>
 				</div>
-				<div class="header__russia">
-					<span class="russia__text">По России:</span>
-					<span class="russia__text--bold">8 800 1000 145</span>
+				<div class="header__operators flex flex__align-middle">
+					<div class="header__operators-number header__operators-number--megafon">0990</div>
+					<div class="header__operators-number header__operators-number--beeline">055</div>
+					<div class="header__operators-number header__operators-number--tele2">0660</div>
+					<div class="header__operators-number header__operators-number--mts">0757</div>
 				</div>
 				<div class="header__search">
-					
+					<img src="img/header/search-icon.svg" alt="Поиск">
 				</div>
-				<div class="header__login-in">
-					<span class="login-in__text">Войти</span>
-				</div>
+				<a href="#" class="header__sign-in">Войти</a>
 			</div>
-			<div class="row header__main-content">
-				<div class="main-content__block">
-					<nav class="header__menu">
-						<li class="header__menu-item">
-							<a href="#" class="header__menu-link">Самопогрузчик</a>
-						</li>
-						<li class="header__menu-item">
-							<a href="#" class="header__menu-link">Эвакуатор</a>
-						</li>
-						<li class="header__menu-item header__menu-item--active">
-							<a href="#" class="header__menu-link ">Такси</a>
-						</li>
-						<li class="header__menu-item">
-							<a href="#" class="header__menu-link">Грузоперевозки</a>
-						</li>
-						<li class="header__menu-item">
-							<a href="#" class="header__menu-link">Услуги для бизнеса</a>
-						</li>
-					</nav>
-					<div class="content__block">
-						<div class="content__block-left">
-							<div class="block-left__text">
-								Вызов + поездка до 2 км за <span class="block-left__text--red-bg">100 руб.</span>
-							</div>
-							<div class="block-left__app">
-								<a href="#" class="block-left__app-link">
-									<img src="../img/header/AppStore.svg" alt="AppStore">
-								</a>
-								<a href="#" class="block-left__app-link">
-									<img src="../img/header/GooglePlay.svg" alt="GooglePlay">
-								</a>
-							</div>
-						</div>
-						<div class="content__block-main">
-							<form class="content__form"	action="/" method="post">
-								<div class="content__form-input--wrapper">
-									<input class="content__form-input" type="text" placeholder="(начните вводить адрес)">
-									<span class="content__form-arrows"></span>
-									<input class="content__form-input" type="text" placeholder="(начните вводить адрес)">
-								</div>
-							</form>
-							<div class="content__block-examples">
-								<span class="examples__address">Багратиона, 6а</span>
-								<span class="examples__address">Маяковского, 22</span>
-								<span class="examples__address">22 Апреля, 16/1</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="main-content__right">
-					<div class="right__contact">
-						<a href="#" class="right__contact-phone">
-							<img src="../img/header/phone.svg" alt="">
-						</a>
-						<a href="#" class="right__contact-mail">
-							<img src="../img/header/mail.svg" alt="">
-						</a>
-					</div>
-					<nav class="right__menu">
-						<li class="right__menu-item">
-							<a href="#" class="right__menu-link">О компании</a>
-						</li>
-						<li class="right__menu-item">
-							<a href="#" class="right__menu-link">Водителям</a>
-						</li>
-						<li class="right__menu-item">
-							<a href="#" class="right__menu-link">Вакансии</a>
-						</li>
-					</nav>
-					<div class="right__menu-more">
-						<span class="right__menu-dot"></span>
-						<span class="right__menu-dot"></span>
-						<span class="right__menu-dot"></span>
-					</div>
-					<div class="right__social">
-						<a href="#" class="right__social-link">
-							<img src="../img/header/vk.svg" alt="vkontakte" class="right__social-img">
-						</a>
-						<a href="#" class="right__social-link">
-							<img src="../img/header/fb.svg" alt="facebook" class="right__social-img">
-						</a>
-						<a href="#" class="right__social-link">
-							<img src="../img/header/tw.svg" alt="twitter" class="right__social-img">
-						</a>
-						<a href="#" class="right__social-link">
-							<img src="../img/header/ok.svg" alt="odnoklassniki" class="right__social-img">
-						</a>
-						<a href="#" class="right__social-link">
-							<img src="../img/header/mailru.svg" alt="mailru" class="right__social-img">
-						</a>
-					</div>
-				</div>
+			<!-- /.header--wrapper -->
+
+			<div class="header__sidebar">
+				<nav class="header__sidebar-menu">
+					<li class="header__sidebar-item"><a href="#" class="header__sidebar-link">О компании</a></li>
+					<li class="header__sidebar-item"><a href="#" class="header__sidebar-link">Водителям</a></li>
+					<li class="header__sidebar-item"><a href="#" class="header__sidebar-link">Вакансии</a></li>
+					<div class="header__sidebar-more"></div>
+				</nav>
+				<div class="header__social flex flex__align-middle">
+					<div class="header__social-btn"><a href="#"><img src="img/header/vk.svg" alt=""></a></div>
+					<div class="header__social-btn"><a href="#"><img src="img/header/fb.svg" alt=""></a></div>
+					<div class="header__social-btn"><a href="#"><img src="img/header/tw.svg" alt=""></a></div>
+					<div class="header__social-btn"><a href="#"><img src="img/header/ok.svg" alt=""></a></div>
+					<div class="header__social-btn"><a href="#"><img src="img/header/mailru.svg" alt=""></a></div>
 			</div>
-		</div>	
+			</div>
+			<!-- /.header__sidebar -->
+
+		</div>
+		<div class="header__contacts">
+			<button class="header__contacts-btn header__contacts-btn--phone"></button>
+			<button class="header__contacts-btn header__contacts-btn--mail"></button>
+		</div>
+		<!-- /.header__contacts -->
+		
 	</header>
 	<!-- /.page-header -->
 
 	<main>
+		<section class="calc">
+			<div class="container column">
+				<nav class="calc__menu flex flex__align-middle">
+					<li class="calc__menu-item"><a href="#" class="calc__menu-link">Самопогрузчик</a></li>
+					<li class="calc__menu-item"><a href="#" class="calc__menu-link">Эвакуатор</a></li>
+					<li class="calc__menu-item calc__menu-item--active"><a href="#" class="calc__menu-link">Такси</a></li>
+					<li class="calc__menu-item"><a href="#" class="calc__menu-link">Грузоперевозки</a></li>
+					<li class="calc__menu-item"><a href="#" class="calc__menu-link">Услуги для бизнеса</a></li>
+				</nav>
+				<!-- /.calc__menu -->
+
+				<div class="calc--wrapper flex">
+					<div class="calc__info">
+						<div class="calc__info-text">
+							Вызов + поездка до 2 км за <span class="calc__info-text--price">100 руб.</span>
+						</div>
+						<div class="calc__info-apps">
+							<div class="calc__info-app"><a href="#"><img src="img/header/AppStore.svg" alt=""></a></div>
+							<div class="calc__info-app"><a href="#"><img src="img/header/GooglePlay.svg" alt=""></a></div>
+						</div>
+					</div>
+					<!-- /.calc__info -->
+
+					<div class="calc__form--container">
+
+						<form action="/" method="post" class="calc__form">
+							<div class="calc__form-inputs flex">
+									<input type="text" class="calc__form-input calc__form-input--from" placeholder="(начните вводить адрес)">
+									<span class="calc__form-arrows"></span>
+									<input type="text" class="calc__form-input calc__form-input--to" placeholder="(начните вводить адрес)">
+							</div>
+							<!-- /.calc__form-inputs -->
+
+							<div class="calc__form-examples flex">
+									<span class="calc__form-example">Багратиона, 6а</span>
+									<span class="calc__form-example">Маяковского, 22</span>
+									<span class="calc__form-example">22 Апреля, 16/1</span>
+							</div>
+							<!-- /.calc__form-examples -->
+
+							<div class="calc__form-add calc__form-add--address">
+								<div class="calc__form-add-text">Добавить адрес</div>
+							</div>
+							<!-- /.calc__form-add -->
+
+							<div class="calc__form-time flex">
+								<button class="calc__form-time-btn calc__form-time-btn--active">Сейчас</button>
+								<button class="calc__form-time-btn">Указать время</button>
+							</div>
+							<!-- /.calc__form-time -->
+
+							<div class="calc__form-add 	calc__form-add--comment">
+								<div class="calc__form-add-text">Добавить комментарий</div>
+							</div>
+							<!-- /.calc__form-add -->
+							
+							<div class="calc__form-submit flex flex__align-middle">
+								<button class="calc__form-submit-btn" type="submit">Рассчитать стоимость</button>
+								<div class="calc__form-submit-bonus">5 бонусных рублей за каждую поездку </div>
+							</div>
+							<!-- /.calc__form-submit -->
+							
+						</form>
+						
+					</div>
+					<!-- /.calc__form--container -->
+
+				</div>
+				<!-- /.calc--wrapper -->
+
+			</div>
+		</section>
+		<!-- /.calc -->
+
 		<section class="why-we">
 			<div class="container column">
 				<header>
