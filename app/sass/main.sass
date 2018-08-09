@@ -818,7 +818,7 @@ img
 				content: ''
 				position: absolute
 				left: -26px
-				top: 42%
+				top: 10px
 				width: 5px
 				height: 5px
 				background: $accent
@@ -939,7 +939,7 @@ img
 					content: ''
 					position: absolute
 					left: -26px
-					top: 42%
+					top: 10px
 					width: 5px
 					height: 5px
 					background: #eb2e2f
@@ -950,7 +950,7 @@ img
 		background: linear-gradient(180deg,#eb2e2e 0,#e30613 100%)
 		border-radius: 2px
 		width: 200px
-		margin: 50px auto 0 auto
+		margin: 50px auto 0
 		height: 50px
 		color: $white
 		font-size: 16px
@@ -965,6 +965,106 @@ img
 
 	&--active
 		display: block
+
+/* d-more-information */
+.d-more-information
+	padding: 90px 0
+
+	&__title
+		color: $text
+		font-weight: 600
+		font-size: 24px
+		margin: 0
+
+	&__tabs
+		margin-top: 58px
+		
+		&-list
+			list-style: none
+			padding: 0
+			margin: 0
+
+		&-item
+			color: $text
+			font-size: 18px
+			line-height: 25px
+			font-weight: 600
+			max-width: 303px
+			margin-right: 55px
+			cursor: pointer
+
+			&:last-child
+				margin-right: 0
+
+			&.d-tabs__item--active
+				position: relative
+				
+				&::before
+					content: ''
+					position: absolute
+					background: $accent
+					width: calc(100% + 37px)
+					height: 2px
+					left: -17px
+					bottom: -17px
+
+				&::after
+					content: ''
+					position: absolute
+					width: 0
+					height: 0
+					border-left: 5px solid transparent
+					border-right: 5px solid transparent
+					border-top: 5px solid red
+					left: calc(50% - 3px)
+					bottom: -21px
+
+		&-content
+			margin-top: 95px
+
+			&-col
+				max-width: 310px
+				margin-right: 70px
+
+				&:last-child
+					margin-right: 0
+
+			&-title
+				color: $text
+				font-size: 14px
+				font-weight: 700
+				margin: 0 0 20px 0
+
+			&-text
+				color: #363738
+				font-size: 13px
+				line-height: 23px
+				font-weight: 400
+
+			&-list
+				list-style: none
+				padding-left: 25px
+				margin: 0
+
+			&-item
+				color: #363738
+				font-size: 13px
+				font-weight: 400
+				position: relative
+				margin-bottom: 25px
+
+				&:last-child
+					margin-bottom: 0
+
+				&::before
+					content: ''
+					position: absolute
+					left: -26px
+					top: 10px
+					width: 5px
+					height: 5px
+					background: #eb2e2f
+					border-radius: 50%
 
 /* page-footer */
 .page-footer
