@@ -63,10 +63,9 @@ img
 
 
 /* header */
-
 .header
 	padding-top: 20px
-	background: #F6F8F7
+	background: $bg-grey
 
 	&__logo img
 		max-width: 80px
@@ -231,7 +230,7 @@ img
 
 /* calc */
 .calc
-	background: url('../img/header/header-bg.png') 50% 100% no-repeat #F6F8F7
+	background: url('../img/header/header-bg.png') 50% 100% no-repeat $bg-grey
 	padding: 62px 0 100px 0
 
 	&__menu
@@ -518,7 +517,7 @@ img
 /* call-taxi */
 .call-taxi
 	padding: 75px 0
-	background: #F6F8F7
+	background: $bg-grey
 
 	&__title
 		font-family: $default-font
@@ -575,7 +574,7 @@ img
 	&__item
 		width: 350px
 		margin: 0 30px 11px 0
-		background: #F6F8F7
+		background: $bg-grey
 		padding: 29px 43px 45px 66px
 		outline: none
 		cursor: pointer
@@ -588,7 +587,7 @@ img
 			left: 75px
 			width: 0
 			height: 0
-			border-top: 11px solid #F6F8F7
+			border-top: 11px solid $bg-grey
 			border-right: 20px solid transparent
 	
 	&__text
@@ -716,7 +715,7 @@ img
 
 /* drivers */
 .drivers
-	background: #F6F8F7
+	background: $bg-grey
 
 	&__heading
 		padding: 30px 0
@@ -843,9 +842,133 @@ img
 					border-right-width: 0
 					transform: rotate(-45deg)
 
+/* d-cooperation */
+.d-cooperation
+	padding: 70px 0
+	background: $bg-grey
+
+	&__title
+		color: $text
+		font-size: 24px
+		line-height: 33px
+		font-weight: 600
+		margin: 0
+
+	&__tabs
+		margin-top: 70px
+
+		&-list
+			list-style: none
+			padding: 0
+			margin: 0
+
+		&-item
+			color: $text
+			font-size: 18px
+			line-height: 25px
+			font-weight: 600
+			max-width: 303px
+			margin-right: 75px
+			cursor: pointer
+
+			&:last-child
+				margin-right: 0
+
+			&.d-tabs__item--active
+				position: relative
+				
+				&::before
+					content: ''
+					position: absolute
+					background: $accent
+					width: 100%
+					height: 2px
+					left: 0
+					bottom: -18px
+
+				&::after
+					content: ''
+					position: absolute
+					width: 0
+					height: 0
+					border-left: 5px solid transparent
+					border-right: 5px solid transparent
+					border-top: 5px solid red
+					left: calc(50% - 5px)
+					bottom: -22px
+
+		&-content
+			margin-top: 70px
+
+			&-col
+				max-width: 265px
+				margin-right: 115px
+
+				&:last-child
+					margin-right: 0
+
+			&-title
+				color: $text
+				font-size: 14px
+				font-weight: 700
+				margin: 0 0 20px 0
+
+			&-text
+				color: #363738
+				font-size: 13px
+				line-height: 23px
+				font-weight: 400
+
+			&-list
+				list-style: none
+				padding-left: 25px
+				margin: 0
+
+			&-item
+				color: #363738
+				font-size: 13px
+				font-weight: 400
+				position: relative
+				margin-bottom: 25px
+				line-height: 22px
+
+				&:last-child
+					margin-bottom: 0
+
+				&::before
+					content: ''
+					position: absolute
+					left: -26px
+					top: 42%
+					width: 5px
+					height: 5px
+					background: #eb2e2f
+					border-radius: 50%
+
+	&__btn
+		display: block
+		background: linear-gradient(180deg,#eb2e2e 0,#e30613 100%)
+		border-radius: 2px
+		width: 200px
+		margin: 50px auto 0 auto
+		height: 50px
+		color: $white
+		font-size: 16px
+		font-weight: 600
+		border: none
+		cursor: pointer
+		outline: 0
+	
+/* tabs */
+.d-tabs__content
+	display: none
+
+	&--active
+		display: block
+
 /* page-footer */
 .page-footer
-	background: #F6F8F7
+	background: $bg-grey
 	padding: 55px 0 45px 0
 
 	&--wrapper

@@ -36,4 +36,11 @@ $(function() {
         return false;
     })
 
+    // tabs
+    $('.d-tabs__list').on('click', 'li:not(.d-tabs__content--active)', function() {
+        $(this)
+          .addClass('d-tabs__item--active').siblings().removeClass('d-tabs__item--active')
+          .closest('.d-tabs').find('.d-tabs__content').removeClass('d-tabs__content--active').eq($(this).index()).addClass('d-tabs__content--active');
+    });
+
 });
