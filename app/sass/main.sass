@@ -1116,6 +1116,93 @@ img
 			& img
 				width: 100%
 
+/* d-faq */
+.d-faq
+	padding: 100px 0
+
+	&__title
+		color: $text
+		font-size: 24px
+		font-weight: 600
+		margin: 0
+
+	&__accordion
+		margin-top: 50px
+
+		&-list
+			list-style: none
+			margin: 0
+			padding: 0
+
+		&-item
+			margin-bottom: 48px
+			max-width: 830px
+			position: relative
+
+			&:last-child
+				margin-bottom: 0
+
+			&::after
+				content: ''
+				position: absolute
+				right: -65px
+				top: 10px
+				width: 16px
+				height: 16px
+				background: url('../img/drivers/plus.svg')
+				cursor: pointer
+
+			&.d-accordion__item--active
+				&::after
+					content: ''
+					position: absolute
+					right: -65px
+					top: 10px
+					width: 16px
+					height: 2px
+					background: url('../img/drivers/minus.svg')
+					cursor: pointer
+			
+
+		&-title
+			color: $text
+			font-size: 14px
+			font-weight: 600
+			margin: 0
+			cursor: pointer
+			line-height: 23px
+
+		&-sub
+
+			&-list
+				list-style: none
+				padding-left: 27px
+				display: none
+
+				&.d-accordion__sub-list--active
+					
+
+			&-item
+				color: #363738
+				font-size: 13px
+				line-height: 23px
+				position: relative
+				margin: 23px 0
+
+				&:last-child
+					margin: 0
+
+				&::before
+					content: ''
+					position: absolute
+					left: -28px
+					top: 10px
+					width: 5px
+					height: 5px
+					background: #eb2e2f
+					border-radius: 50%
+		
+
 /* page-footer */
 .page-footer
 	background: $bg-grey
@@ -1123,6 +1210,12 @@ img
 
 	&--wrapper
 		flex: 1
+
+	&__col
+		padding-top: 10px
+
+		&:first-child
+			padding-top: 0
 
 	&__logo
 		margin-bottom: 30px
@@ -1139,6 +1232,7 @@ img
 		font-size: 13px
 		line-height: 23px
 		display: block
+		text-decoration: none
 
 		&:hover
 			color: $text-grey
@@ -1157,7 +1251,7 @@ img
 			font-weight: 600
 
 	&__mobile
-		margin-top: 47px
+		margin-top: 37px
 
 		&-text
 			font-family: $default-font
@@ -1198,7 +1292,7 @@ img
 			max-width: 100px
 
 	&__tel
-		margin-top: 50px
+		margin-top: 40px
 
 		&-text
 			font-family: $default-font
@@ -1218,7 +1312,7 @@ img
 			margin-right: 0
 
 	&__sms
-		margin-top: 53px
+		margin-top: 56px
 
 		&-text
 			font-family: $default-font
