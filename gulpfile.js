@@ -3,6 +3,10 @@ var syntax        = 'sass'; // Syntax: sass or scss;
 var gulp          = require('gulp'),
 		gutil         = require('gulp-util' ),
 		sass          = require('gulp-sass'),
+		del           = require('del'),
+		imagemin      = require('gulp-imagemin'),
+		pngquant      = require('imagemin-pngquant'),
+		cache         = require('gulp-cache'),
 		browserSync   = require('browser-sync'),
 		concat        = require('gulp-concat'),
 		uglify        = require('gulp-uglify'),
@@ -73,5 +77,43 @@ gulp.task('watch', ['styles', 'js', 'browser-sync'], function() {
 	gulp.watch(['libs/**/*.js', 'app/js/common.js'], ['js']);
 	gulp.watch('app/*.html', browserSync.reload)
 });
+
+gulp.task('clean', function() {
+	return del.sync('dist');
+});
+
+gulp.task('img', function() {
+	return gulp.src('app/img/**/*')
+		.pipe(cache(imagemin({
+		// .pipe(imagemin({
+			interlaced: true,
+			progressive: true,
+			svgoPlugins: [{removeViewBox: false}],
+			use: [pngquant()]
+		}))/**/)
+		.pipe(gulp.dest('dist/img'));
+});
+
+gulp.task('build', ['clean', 'img', 'styles', 'js'], function() {
+
+	var buildCss = gulp.src([ 
+		'app/css/main.min.css'
+		])
+	.pipe(gulp.dest('dist/css'))
+
+	var buildFonts = gulp.src('app/fonts/**/*')
+	.pipe(gulp.dest('dist/fonts'))
+
+	var buildJs = gulp.src('app/js/**/*')
+	.pipe(gulp.dest('dist/js'))
+
+	var buildHtml = gulp.src('app/*.html')
+	.pipe(gulp.dest('dist'));
+
+});
+
+gulp.task('clear', function (callback) {
+	return cache.clearAll();
+})
 
 gulp.task('default', ['watch']);
