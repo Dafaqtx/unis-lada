@@ -3,27 +3,41 @@
 
 <head>
 
-	<meta charset="utf-8">
-	<!-- <base href="/"> -->
+    <!-- Set character encoding for the document -->
+    <meta charset="utf-8">
 
-	<title>Юнис-лада</title>
-	<meta name="description" content="">
+    <!-- Viewport for responsive web design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
-	<!-- Template Basic Images Start -->
-	<meta property="og:image" content="path/to/image.jpg">
-	<link rel="icon" href="img/favicon/favicon.ico">
-	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
-	<!-- Template Basic Images End -->
-	
-	<!-- Custom Browsers Color Start -->
-	<meta name="theme-color" content="#000">
-	<!-- Custom Browsers Color End -->
+    <!-- Document Title -->
+    <title>Юнис-лада</title>
 
-	<link rel="stylesheet" href="css/main.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic" rel="stylesheet">
+    <!-- Meta Description -->
+    <meta name="description" content="Description of the page less than 150 characters">
+
+    <!-- Standard favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <!-- Recommended favicon format -->
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- Apple Touch Icon (at least 200x200px) -->
+    <link rel="apple-touch-icon" href="/custom-icon.png">
+
+    <!-- To run web application in full-screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Status Bar Style (see Supported Meta Tags below for available values) -->
+    <!-- Has no effect unless you have the previous meta tag -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Helps prevent duplicate content issues -->
+    <link rel="canonical" href="/">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+
+    <link rel="stylesheet" href="css/main.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic" rel="stylesheet">
 
 </head>
 
@@ -94,7 +108,36 @@
 	<!-- /.page-header -->
 
 	<main>
-        <section class="news"></section>
+        <section class="services">
+            <div class="container column">
+                <header>
+                    <h1 class="services__title">Услуги</h1>
+                </header>
+                <div class="services__desc services__desc--black">
+                    Компания «Юнис-Лада» - основоположник отрасли цивилизованных таксомоторных перевозок в Омске, который продолжает активно развивать рынок транспортных услуг. 
+                </div>
+                <div class="services__desc services__desc--grey">
+                    Сейчас в группу компаний «Юнис-Лада» входят крупнейшие таксопарки в регионе, собственные территории с производственными помещениями, торговые точки, оптовый склад, автостоянки и автомастерские, оборудованные современными техническими средствами. Благодаря собственной медицинской службе компания обеспечивает безопасность пассажиров и высокое качество обслуживания.
+                </div>
+                <div class="services__items flex">
+                    <div class="services__item">
+                        <div class="services__img"><a href="#"><img src="img/services/car1.png" alt="Самопогрузчик"></a></div>
+                    </div>
+                    <div class="services__item">
+                        <div class="services__img"><a href="#"><img src="img/services/car2.png" alt="Эвакуатор"></a></div>
+                    </div>
+                    <div class="services__item">
+                        <div class="services__img"><a href="#"><img src="img/services/car3.png" alt="Такси"></a></div>
+                    </div>
+                    <div class="services__item">
+                        <div class="services__img"><a href="#"><img src="img/services/car4.png" alt="Грузоперевозки"></a></div>
+                    </div>
+                    <div class="services__item">
+                        <div class="services__img"><a href="#"><img src="img/services/car5.png" alt="Услуги для бизнеса"></a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 	</main>
 
 	<footer class="page-footer">
