@@ -11,6 +11,8 @@ var gulp          = require('gulp'),
 		autoprefixer  = require('gulp-autoprefixer'),
 		notify        = require("gulp-notify"),
 		rsync         = require('gulp-rsync');
+		csscomb       = require('gulp-csscomb');
+		csso          = require('gulp-csso');
 
 gulp.task('browser-sync', function() {
 	browserSync({
@@ -29,10 +31,11 @@ gulp.task('styles', function() {
 	.pipe(sass({
 		includePaths: require('node-normalize-scss').includePaths, 
 		outputStyle: 'expanded' 
-	})
-		.on("error", notify.onError()))
+	}).on("error", notify.onError()))
 	.pipe(rename({ suffix: '.min', prefix : '' }))
 	.pipe(autoprefixer(['last 15 versions']))
+	.pipe(csscomb())
+	.pipe(csso())
 	.pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Opt., comment out when debugging
 	.pipe(gulp.dest('app/css'))
 	.pipe(browserSync.stream())
