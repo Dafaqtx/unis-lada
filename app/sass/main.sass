@@ -1548,7 +1548,202 @@ img
 
 /* s-lk */
 .s-lk
-	
+	background: $bg-grey
+	padding: 25px 0 80px 0
+
+	&__name
+		font-size: 36px
+		font-weight: 600
+		margin: 0
+
+	&__menu
+		margin-top: 35px
+
+		&-list
+			list-style: none
+			padding: 0
+			margin: 0
+
+		&-item
+			margin-right: 16px
+
+			&:last-child
+				margin-right: 0
+
+		&-link
+			color: $text-grey
+			font-size: 13px
+			line-height: 23px
+			text-decoration: none
+
+			&:hover
+				color: $shark
+
+	&__money
+		margin-top: 58px
+		
+		&-capital
+			color: $text
+			font-size: 24px
+			font-weight: 600
+			text-align: center
+			line-height: 60px
+			width: 160px
+			height: 60px
+			border: 1px solid $silver
+			box-sizing: border-box
+			border-radius: 2px
+			margin-right: 60px
+
+		&-list
+			list-style: none
+			padding: 0
+			margin: 0
+
+		&-item
+			margin-right: 16px
+
+			&:last-child
+				margin-right: 
+			
+		&-link
+			text-decoration: none
+			color: $text-grey
+			font-size: 13px
+			line-height: 23px
+
+			&:hover
+				color: $shark
+
+	&__profile
+		margin-top: 35px
+
+	&__hystory
+		width: 730px
+		padding: 30px 35px 75px 35px
+		background: $white
+		box-sizing: border-box
+
+		&-title
+			color: $text
+			font-size: 12px
+			letter-spacing: 0.1em
+			font-weight: 700
+			text-transform: uppercase
+			margin-bottom: 30px
+		
+		&-search
+			width: 100%
+			border: 1px solid $silver
+			box-sizing: border-box
+			border-radius: 2px
+			height: 50px
+			padding-left: 38px
+			outline: none
+			background: url('../img/lk/search.svg') 16px center no-repeat $white
+
+			&::placeholder
+				color: $text-grey
+				font-size: 14px
+				font-weight: normal
+				line-height: normal
+
+	&__information
+		width: 350px
+		padding: 30px 35px
+		background: $white
+		box-sizing: border-box
+		height: 100%
+
+		&-title
+			color: $text
+			font-size: 12px
+			letter-spacing: 0.1em
+			font-weight: 700
+			text-transform: uppercase
+			margin-bottom: 40px
+
+		&-tel
+			color: $text
+			font-size: 15px
+			font-weight: 600
+			line-height: normal
+			margin-bottom: 25px
+
+		&-city
+			color: $shark
+			font-size: 13px
+			line-height: 23px
+			font-weight: 400
+			margin-bottom: 15px
+
+/* travel */	
+.travel
+	margin-top: 47px
+
+	&__row
+		width: 100%
+		margin-bottom: 20px
+
+	&__date
+		color: $text-grey
+		font-size: 12px
+		font-weight: 300
+		line-height: normal
+		margin-right: 52px
+		min-width: 61px
+
+	&__cost
+		color: $shark
+		font-size: 14px
+		line-height: 25px
+		font-weight: 600
+		margin-right: 49px
+		min-width: 30px
+
+	&__review
+		margin-right: 30px
+		min-width: 14px
+		height: 16px
+		background: url('../img/lk/star.svg') center no-repeat
+
+		&--red
+			background: url('../img/lk/star-red.svg') center no-repeat
+
+	&__address
+
+		&-from
+			color: $text-grey
+			font-size: 13px
+			line-height: 23px
+			font-weight: normal
+			padding-left: 19px
+			background: url('../img/lk/pin.svg') left center no-repeat
+
+		&-to
+			color: $text-grey
+			font-size: 13px
+			line-height: 23px
+			font-weight: normal
+			padding-left: 19px
+			background: url('../img/lk/pin.svg') left center no-repeat
+		
+	&__delimiter
+		width: 13px
+		height: 1px
+		background: $text-grey
+		margin: 0 16px 0 19px
+
+	&__more
+		color: $text
+		font-size: 13px
+		line-height: 23px
+		display: inline-block
+		margin-left: 50%
+		transform: translateX(-50%)
+		text-decoration: none
+		border-bottom: 2px dotted $text
+		margin-top: 22px
 
 /* page-footer */
 .page-footer
