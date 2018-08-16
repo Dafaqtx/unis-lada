@@ -74,9 +74,11 @@ img
 		margin-left: 15px
 		color: $text-grey
 		font-size: 13px
+		margin-top: 16px
 
 	&__call
 		margin-left: 50px
+		margin-top: 15px
 
 		&-text
 			color: $text-grey
@@ -90,6 +92,7 @@ img
 
 	&__sms
 		margin-left: 50px
+		margin-top: 13px
 
 		&-text
 			color: $text-grey
@@ -103,6 +106,7 @@ img
 
 	&__operators
 		margin-left: 50px
+		margin-top: 13px
 
 		&-number
 			padding-left: 23px
@@ -112,7 +116,7 @@ img
 			font-weight: 700
 			margin-right: 20px
 
-			:last-child
+			&:last-child
 				margin-right: 0
 
 			&--megafon
@@ -129,15 +133,55 @@ img
 				background: url('../img/footer/mts.svg') left 50% no-repeat
 
 	&__search
-		margin-left: 23px
+		margin-left: 40px
+		margin-top: 20px
+		cursor: pointer
+
+		&-input
+			display: none
+			width: calc(100% - 180px)
+			background: $bg-grey
+			border: none
+			z-index: 100
+			outline: none
+			padding: 0
+			color: $shark
+			font-size: 14px
+
+			&::placeholder
+				color: $text-grey
+				font-size: 14px
+
+		&--open
+			width: 365px
+			margin-top: 14px
+
+			& .header__search-input
+				display: block
+
+		&-btn
+			background: url('../img/header/search-icon.svg') center / 14px no-repeat
+			width: 20px
+			height: 20px
+			border: none
+			padding: 0
+			cursor: pointer
+			outline: none
+
+			&:hover
+				background: url('../img/header/search-icon--red.svg') center / 14px no-repeat
 
 	&__sign-in
 		background: url('../img/header/user-icon.svg') left 50% no-repeat
 		color: $text-grey
 		font-size: 14px
 		padding-left: 24px
-		margin-left: 36px
+		margin-left: 33px
+		margin-top: 15px
 		text-decoration: none
+
+		&:hover
+			background: url('../img/header/user-icon--red.svg') left 50% no-repeat
 
 	&__sidebar
 		position: absolute
@@ -146,12 +190,16 @@ img
 		width: 132px
 		z-index: 1
 		
-
 		&-menu
 			list-style: none
 			padding: 0
 			margin: 0
 
+		&-item
+
+			&--hidden
+				display: none
+				
 		&-link
 			text-decoration: none
 			color: $text-grey
@@ -159,7 +207,7 @@ img
 			line-height: 33px
 
 			&:hover
-				text-decoration: underline
+				color: $shark
 		
 		&-more
 			width: 20px
@@ -173,6 +221,11 @@ img
 
 		&-btn
 			margin-right: 15px
+
+			&:hover
+				& img
+					filter: invert(100%)
+					transition: all .3s ease
 
 			&:last-child
 				margin-right: 0
@@ -240,11 +293,18 @@ img
 
 		&-item
 			margin-right: 56px
+			cursor: pointer
+			color: $text
+			font-size: 18px
+			line-height: 25px
+
+			&:hover
+				color: $accent
 
 			&:last-child
 				margin-right: 0
 
-			&--active
+			&.d-tabs__item--active
 				position: relative
 
 				&::before
@@ -254,7 +314,7 @@ img
 					width: calc(100% + 40px)
 					height: 2px
 					left: -18px
-					bottom: -16px
+					bottom: -18px
 
 				&::after
 					content: ''
@@ -264,14 +324,8 @@ img
 					border-left: 5px solid transparent
 					border-right: 5px solid transparent
 					border-top: 5px solid red
-					left: calc(50% - 5px)
-					bottom: -80%
-
-		&-link
-			text-decoration: none
-			color: $text
-			font-size: 18px
-			line-height: 25px
+					left: calc(50% - 2px)
+					bottom: -82%
 
 	&--wrapper
 		margin-top: 50px
@@ -314,22 +368,60 @@ img
 			box-sizing: border-box
 			color: $shark
 			font-size: 14px
-			font-weight: 600
+			font-weight: 400
+			outline: none
 			
+			&--add
+				margin-top: 25px
 
-			&--from
-				background: url('../img/header/from.svg') 16px 48% no-repeat $white
-				padding-left: 90px
-
-			&--to
-				background: url('../img/header/to.svg') 16px 48% no-repeat $white
-				padding-left: 75px
+				& input
+					display: block
+					margin-top: 26px
 
 			&::placeholder
 				color: $silver
 				font-size: 13px
 				font-weight: 400
+			
+			&--from,
+			&--more
+				background: url('../img/header/from.svg') 16px 48% no-repeat $white
+				padding-left: 90px
+				transition: all .3s ease
 
+				&:focus
+					background: url('../img/header/location.svg') 16px 44% no-repeat $white
+					padding-left: 36px
+					transition: all .3s ease
+
+			&--to
+				background: url('../img/header/to.svg') 16px 48% no-repeat $white
+				padding-left: 75px
+				transition: all .3s ease
+
+				&:focus
+					background: url('../img/header/location.svg') 16px 48% no-repeat $white
+					padding-left: 36px
+					transition: all .3s ease
+
+		&-textarea
+			background: $white
+			border: 1px solid $silver
+			box-sizing: border-box
+			border-radius: 2px
+			padding-left: 25px
+			padding: 15px
+			width: 100%
+			height: 100%
+			resize: none
+			outline: none
+			font-size: 14px
+			font-weight: 400
+
+			&::placeholder
+				color: $text-grey
+				font-size: 14px
+			
 		&-arrows
 			background: url('../img/header/arrows.svg') center no-repeat
 			width: 30px
@@ -347,15 +439,25 @@ img
 			border-bottom: 0.13em dotted $shark
 			cursor: pointer
 
+			&:hover
+				color: #EC4747
+				border-bottom: 0.13em dotted #EC4747
+
 			&:last-child
 				margin-right: 0
 
 		&-add
-			margin: 20px 0 0 12px
-			background: url('../img/header/add.svg') no-repeat
+			margin: 22px 0 0 12px
+			background: url('../img/header/add.svg') left center no-repeat
 			padding-left: 25px
 			line-height: 18px
 			cursor: pointer
+
+			&-textarea
+				margin-top: 25px
+				display: none
+				width: 100%
+				height: 100px
 
 			&-text
 				color: $text-grey
@@ -363,8 +465,13 @@ img
 				border-bottom: 0.13em dotted $text-grey
 				display: inline-block
 
+			&-comment
+
+				&--open
+					background: url('../img/header/cancel.svg') left center no-repeat
+
 		&-time
-			margin-top: 35px
+			margin-top: 30px
 			width: 255px
 
 			&-btn
@@ -380,6 +487,7 @@ img
 				transition: all .3s ease
 				line-height: 50px
 
+
 				&--active
 					color: $shark
 					background: $white
@@ -392,7 +500,7 @@ img
 			&-btn
 				width: 240px
 				height: 50px
-				background: linear-gradient(180deg, $accent 0%, #E30613 100%)
+				background: linear-gradient(180deg, #EB2E2E 0%, #E30613 100%)
 				border-radius: 2px
 				border: none
 				color: $white
@@ -402,7 +510,10 @@ img
 				outline: none
 
 				&:hover
-					background: darken($accent, 10%)
+					background: linear-gradient(180deg, #EB2E2E 0%, #EE292A 100%)
+
+				&:active
+					background: linear-gradient(180deg, #EB2E2E 0%, #CF2520 100%)
 
 			&-bonus
 				color: $shark
@@ -1648,6 +1759,7 @@ img
 				font-weight: normal
 				line-height: normal
 
+
 	&__information
 		width: 350px
 		padding: 30px 35px
@@ -1808,9 +1920,6 @@ img
 			font-size: 15px
 			font-weight: 700
 			margin-right: 20px
-
-			&:last-child
-				margin-right: 0
 
 			&--megafon
 				background: url('../img/footer/megafon.svg') left 50% no-repeat

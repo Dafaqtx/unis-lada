@@ -64,9 +64,10 @@
 					<div class="header__operators-number header__operators-number--tele2">0660</div>
 					<div class="header__operators-number header__operators-number--mts">0757</div>
 				</div>
-				<div class="header__search">
-					<img src="img/header/search-icon.svg" alt="Поиск">
-				</div>
+				<form class="header__search">
+					<input class="header__search-input" type="text" placeholder="Я хочу найти">
+					<button class="header__search-btn" type="submit"></button>
+				</form>
 				<a href="#" class="header__sign-in">Войти</a>
 			</div>
 			<!-- /.header--wrapper -->
@@ -76,14 +77,20 @@
 					<li class="header__sidebar-item"><a href="#" class="header__sidebar-link">О компании</a></li>
 					<li class="header__sidebar-item"><a href="#" class="header__sidebar-link">Водителям</a></li>
 					<li class="header__sidebar-item"><a href="#" class="header__sidebar-link">Вакансии</a></li>
+					<li class="header__sidebar-item header__sidebar-item--hidden"><a href="#" class="header__sidebar-link">Водителям</a></li>
+					<li class="header__sidebar-item header__sidebar-item--hidden"><a href="#" class="header__sidebar-link">Контакты</a></li>
+					<li class="header__sidebar-item header__sidebar-item--hidden"><a href="#" class="header__sidebar-link">Новости</a></li>
+					<li class="header__sidebar-item header__sidebar-item--hidden"><a href="#" class="header__sidebar-link">Написать нам</a></li>
+					<li class="header__sidebar-item header__sidebar-item--hidden"><a href="#" class="header__sidebar-link">Карта сайта</a></li>
+					<li class="header__sidebar-item header__sidebar-item--hidden"><a href="#" class="header__sidebar-link">Наши друзья</a></li>
 					<div class="header__sidebar-more"></div>
 				</nav>
 				<div class="header__social flex flex__align-middle">
-					<div class="header__social-btn"><a href="#"><img src="img/header/vk.svg" alt=""></a></div>
-					<div class="header__social-btn"><a href="#"><img src="img/header/fb.svg" alt=""></a></div>
-					<div class="header__social-btn"><a href="#"><img src="img/header/tw.svg" alt=""></a></div>
-					<div class="header__social-btn"><a href="#"><img src="img/header/ok.svg" alt=""></a></div>
-					<div class="header__social-btn"><a href="#"><img src="img/header/mailru.svg" alt=""></a></div>
+					<div class="header__social-btn"><a href="#"><img src="img/header/vk.svg" alt="vk"></a></div>
+					<div class="header__social-btn"><a href="#"><img src="img/header/fb.svg" alt="facebook"></a></div>
+					<div class="header__social-btn"><a href="#"><img src="img/header/tw.svg" alt="twitter"></a></div>
+					<div class="header__social-btn"><a href="#"><img src="img/header/ok.svg" alt="ok"></a></div>
+					<div class="header__social-btn"><a href="#"><img src="img/header/mailru.svg" alt="mairu"></a></div>
 				</div>
 			</div>
 			<!-- /.header__sidebar -->
@@ -101,73 +108,100 @@
 	<main>
 		<section class="calc">
 			<div class="container column">
-				<nav class="calc__menu flex flex__align-middle">
-					<li class="calc__menu-item"><a href="#" class="calc__menu-link">Самопогрузчик</a></li>
-					<li class="calc__menu-item"><a href="#" class="calc__menu-link">Эвакуатор</a></li>
-					<li class="calc__menu-item calc__menu-item--active"><a href="#" class="calc__menu-link">Такси</a></li>
-					<li class="calc__menu-item"><a href="#" class="calc__menu-link">Грузоперевозки</a></li>
-					<li class="calc__menu-item"><a href="#" class="calc__menu-link">Услуги для бизнеса</a></li>
-				</nav>
-				<!-- /.calc__menu -->
+				<div class="calc__tabs d-tabs">
+					<ul class="calc__menu d-tabs__list flex">
+						<li class="calc__menu-item d-tabs__item">Самопогрузчик</li>
+						<li class="calc__menu-item d-tabs__item">Эвакуатор</li>
+						<li class="calc__menu-item d-tabs__item d-tabs__item--active">Такси</li>
+						<li class="calc__menu-item d-tabs__item">Грузоперевозки</li>
+						<li class="calc__menu-item d-tabs__item">Услуги для бизнеса</li>
+					</ul>
 
-				<div class="calc--wrapper flex">
-					<div class="calc__info">
-						<div class="calc__info-text">
-							Вызов + поездка до 2 км за <span class="calc__info-text--price">100 руб.</span>
-						</div>
-						<div class="calc__info-apps">
-							<div class="calc__info-app"><a href="#"><img src="img/header/AppStore.svg" alt=""></a></div>
-							<div class="calc__info-app"><a href="#"><img src="img/header/GooglePlay.svg" alt=""></a></div>
-						</div>
+					<div class="d-tabs__content">1</div>
+					<!-- /.d-tabs__content 1 -->
+					<div class="d-tabs__content">2</div>
+					<!-- /.d-tabs__content 2 -->
+
+					<div class="d-tabs__content d-tabs__content--active">
+							<div class="calc--wrapper flex">
+									<div class="calc__info">
+										<div class="calc__info-text">
+											Вызов + поездка до 2 км за <span class="calc__info-text--price">100 руб.</span>
+										</div>
+										<div class="calc__info-apps">
+											<div class="calc__info-app"><a href="#"><img src="img/header/AppStore.svg" alt=""></a></div>
+											<div class="calc__info-app"><a href="#"><img src="img/header/GooglePlay.svg" alt=""></a></div>
+										</div>
+									</div>
+									<!-- /.calc__info -->
+				
+									<div class="calc__form--container">
+				
+										<form action="/" method="post" class="calc__form">
+											<div class="calc__form-inputs flex">
+													<input type="text" name="from-0" class="calc__form-input calc__form-input--from" placeholder="(начните вводить адрес)">
+													<span class="calc__form-arrows"></span>
+													<input type="text" name="to" class="calc__form-input calc__form-input--to" placeholder="(начните вводить адрес)">
+											</div>
+											<!-- /.calc__form-inputs -->
+				
+											<div class="calc__form-examples flex">
+													<span class="calc__form-example">Багратиона, 6а</span>
+													<span class="calc__form-example">Маяковского, 22</span>
+													<span class="calc__form-example">22 Апреля, 16/1</span>
+											</div>
+											<!-- /.calc__form-examples -->
+											
+											<div class="calc__form-input--add">
+
+											</div>
+											<!-- /.calc__form-input--add -->
+
+											<div class="calc__form-add calc__form-add--address">
+												<div id="js-add-address" class="calc__form-add-text">Добавить адрес</div>
+											</div>
+											<!-- /.calc__form-add -->
+				
+											<div class="calc__form-time flex">
+												<button class="calc__form-time-btn calc__form-time-btn--active">Сейчас</button>
+												<button class="calc__form-time-btn">Указать время</button>
+											</div>
+											<!-- /.calc__form-time -->
+											
+											<div class="calc__form-add-textarea">
+												<textarea name="comment" class="calc__form-textarea" placeholder="Вы можете указать точное место или другие параметры"></textarea>
+											</div>
+											<!-- /.calc__form-add-textarea -->
+
+											<div class="calc__form-add calc__form-add-comment">
+												<div id="js-add-comment" class="calc__form-add-text">Добавить комментарий</div>
+											</div>
+											<!-- /.calc__form-add -->
+											
+											<div class="calc__form-submit flex flex__align-middle">
+												<button class="calc__form-submit-btn" type="submit">Рассчитать стоимость</button>
+												<div class="calc__form-submit-bonus">5 бонусных рублей за каждую поездку </div>
+											</div>
+											<!-- /.calc__form-submit -->
+											
+										</form>
+										
+									</div>
+									<!-- /.calc__form--container -->
+				
+								</div>
+								<!-- /.calc--wrapper -->
 					</div>
-					<!-- /.calc__info -->
+						<!-- /.d-tabs__content 3 -->
 
-					<div class="calc__form--container">
+					<div class="d-tabs__content">4</div>
+					<!-- /.d-tabs__content 4 -->
 
-						<form action="/" method="post" class="calc__form">
-							<div class="calc__form-inputs flex">
-									<input type="text" class="calc__form-input calc__form-input--from" placeholder="(начните вводить адрес)">
-									<span class="calc__form-arrows"></span>
-									<input type="text" class="calc__form-input calc__form-input--to" placeholder="(начните вводить адрес)">
-							</div>
-							<!-- /.calc__form-inputs -->
-
-							<div class="calc__form-examples flex">
-									<span class="calc__form-example">Багратиона, 6а</span>
-									<span class="calc__form-example">Маяковского, 22</span>
-									<span class="calc__form-example">22 Апреля, 16/1</span>
-							</div>
-							<!-- /.calc__form-examples -->
-
-							<div class="calc__form-add calc__form-add--address">
-								<div class="calc__form-add-text">Добавить адрес</div>
-							</div>
-							<!-- /.calc__form-add -->
-
-							<div class="calc__form-time flex">
-								<button class="calc__form-time-btn calc__form-time-btn--active">Сейчас</button>
-								<button class="calc__form-time-btn">Указать время</button>
-							</div>
-							<!-- /.calc__form-time -->
-
-							<div class="calc__form-add 	calc__form-add--comment">
-								<div class="calc__form-add-text">Добавить комментарий</div>
-							</div>
-							<!-- /.calc__form-add -->
-							
-							<div class="calc__form-submit flex flex__align-middle">
-								<button class="calc__form-submit-btn" type="submit">Рассчитать стоимость</button>
-								<div class="calc__form-submit-bonus">5 бонусных рублей за каждую поездку </div>
-							</div>
-							<!-- /.calc__form-submit -->
-							
-						</form>
-						
-					</div>
-					<!-- /.calc__form--container -->
+					<div class="d-tabs__content">5</div>
+					<!-- /.d-tabs__content 5 -->
 
 				</div>
-				<!-- /.calc--wrapper -->
+				<!-- /.calc__tabs -->
 
 			</div>
 		</section>
