@@ -1,0 +1,56 @@
+/* basic */
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+
+img
+	display: block
+	max-width: 100%
+
+.mt5px
+	margin-top: 5px
+
+.flex
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+
+	&__align-right
+		justify-content: flex-end
+
+	&__align-center
+		justify-content: center
+
+	&__align-justify
+		justify-content: space-between
+
+	&__align-spaced
+		justify-content: space-around
+
+	&__align-top
+		align-items: flex-start
+
+	&__align-bottom
+		align-items: flex-end
+
+	&__align-middle
+		align-items: center
+
+	&__align-stretch
+		align-items: stretch
+
+.container-wrap
+	width: 100%
+
+.container
+	max-width: 1110px
+	margin: auto
+	position: relative
+
+.column
+	padding: 0 15px

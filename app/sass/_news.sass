@@ -1,0 +1,115 @@
+/* news */	
+.news
+	padding: 37px 0 100px 0
+	background: $white
+	margin-top: 130px
+
+	&__main
+		margin-top: -95px
+		margin-bottom: 80px
+
+	&__item
+		max-width: 350px
+		margin-right: 30px
+		margin-bottom: 73px
+
+		&:nth-child(3n + 3)
+			margin-right: 0
+
+	&__img
+		border-radius: 3px
+		
+		&--main
+			max-width: 760px
+			margin-right: 25px
+
+	&__info
+		max-width: 325px
+
+	&__category
+		margin-top: 25px
+
+		& a
+			color: $text
+			font-size: 12px
+			font-weight: 700
+			text-decoration: none
+			text-transform: uppercase
+			letter-spacing: 0.1em
+
+		&--main
+			margin-top: 95px
+
+	&__title
+		color: $text
+		font-size: 16px
+		line-height: 26px
+		font-weight: 400
+		margin: 0
+		margin-top: 16px
+
+		&--main
+			font-size: 24px
+			font-weight: 600
+			line-height: normal
+			margin-top: 30px
+
+	&__excerpt
+		font-size: 13px
+		line-height: 23px
+		color: $shark
+		margin: 0
+		margin-top: 18px
+
+		&--main
+			margin-top: 20px
+
+	&__date
+		color: $text-grey
+		font-size: 13px
+		font-weight: 30
+		display: block
+		margin-top: 33px
+
+		&--main
+			margin-top: 32px
+
+	&__pagination
+		margin-top: 15px
+
+		&-prev
+			color: $text-grey
+			font-size: 13px
+			font-weight: 300
+			line-height: normal
+			text-decoration: none
+
+			&:hover
+				color: $shark
+
+		&-list
+			list-style: none
+			padding: 0
+			margin: 0
+
+		&-item
+			margin-right: 37px
+
+			&:last-child
+				margin-right: 0
+
+		&-link
+			color: $shark
+			font-size: 13px
+			line-height: 23px
+			font-weight: 400
+			text-decoration: none
+
+		&-next
+			color: $text-grey
+			font-size: 13px
+			line-height: normal
+			text-decoration: none
+
+			&:hover
+				color: $shark

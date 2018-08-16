@@ -1,0 +1,194 @@
+/* header */
+.header
+	padding-top: 20px
+	background: $bg-grey
+
+	&__logo img
+		max-width: 80px
+
+	&__slogan
+		margin-left: 15px
+		color: $text-grey
+		font-size: 13px
+		margin-top: 16px
+
+	&__call
+		margin-left: 50px
+		margin-top: 15px
+
+		&-text
+			color: $text-grey
+			font-size: 13px
+
+			&--bold
+				color: $text
+				font-size: 18px
+				font-weight: 600
+				margin-left: 10px
+
+	&__sms
+		margin-left: 50px
+		margin-top: 13px
+
+		&-text
+			color: $text-grey
+			font-size: 13px
+
+			&--bold
+				color: $text
+				font-size: 15px
+				font-weight: 600
+				margin-left: 10px
+
+	&__operators
+		margin-left: 50px
+		margin-top: 13px
+
+		&-number
+			padding-left: 23px
+			font-family: $default-font
+			color: $text
+			font-size: 15px
+			font-weight: 700
+			margin-right: 20px
+
+			&:last-child
+				margin-right: 0
+
+			&--megafon
+				background: url('../img/footer/megafon.svg') left 50% no-repeat
+
+			&--beeline
+				background: url('../img/footer/beeline.svg') left 50% no-repeat
+
+			&--tele2
+				background: url('../img/footer/tele2.svg') left 50% no-repeat
+				padding-left: 37px
+
+			&--mts
+				background: url('../img/footer/mts.svg') left 50% no-repeat
+
+	&__search
+		margin-left: 40px
+		margin-top: 20px
+		cursor: pointer
+
+		&-input
+			display: none
+			width: calc(100% - 180px)
+			background: $bg-grey
+			border: none
+			z-index: 100
+			outline: none
+			padding: 0
+			color: $shark
+			font-size: 14px
+
+			&::placeholder
+				color: $text-grey
+				font-size: 14px
+
+		&--open
+			width: 365px
+			margin-top: 14px
+
+			& .header__search-input
+				display: block
+
+		&-btn
+			background: url('../img/header/search-icon.svg') center / 14px no-repeat
+			width: 20px
+			height: 20px
+			border: none
+			padding: 0
+			cursor: pointer
+			outline: none
+
+			&:hover
+				background: url('../img/header/search-icon--red.svg') center / 14px no-repeat
+
+	&__sign-in
+		background: url('../img/header/user-icon.svg') left 50% no-repeat
+		color: $text-grey
+		font-size: 14px
+		padding-left: 24px
+		margin-left: 33px
+		margin-top: 15px
+		text-decoration: none
+
+		&:hover
+			background: url('../img/header/user-icon--red.svg') left 50% no-repeat
+
+	&__sidebar
+		position: absolute
+		right: 0
+		top: 112px
+		width: 132px
+		z-index: 1
+		
+		&-menu
+			list-style: none
+			padding: 0
+			margin: 0
+
+		&-item
+
+			&--hidden
+				display: none
+				
+		&-link
+			text-decoration: none
+			color: $text-grey
+			font-size: 14px
+			line-height: 33px
+
+			&:hover
+				color: $shark
+		
+		&-more
+			width: 20px
+			height: 20px
+			margin-top: 15px
+			cursor: pointer
+			background: url('../img/header/union.svg') left center / 100% no-repeat
+
+	&__social
+		margin-top: 40px
+
+		&-btn
+			margin-right: 15px
+
+			&:hover
+				& img
+					filter: invert(100%)
+					transition: all .3s ease
+
+			&:last-child
+				margin-right: 0
+
+	&__contacts
+		position: absolute
+		right: 0
+		top: 130px
+		background: $accent
+		width: 50px
+		height: 80px
+
+		&-btn
+			height: 50%
+			cursor: pointer
+			display: block
+			width: 100%
+			border: none
+			padding: 0
+			transition: all .3s ease
+
+			&:hover
+				background-color: darken($accent, 10%)
+				transition: all .3s ease
+
+			&--phone
+				background: url('../img/header/phone.svg') center no-repeat
+
+			&--mail
+				background: url('../img/header/mail.svg') center no-repeat

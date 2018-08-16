@@ -1,0 +1,51 @@
+/* s-news */
+.s-news
+	padding: 40px 0 0 0
+	background: $bg-grey
+	
+	&__heading
+		max-width: 760px
+		
+	&__title
+		color: $text
+		font-size: 36px
+		line-height: 36px
+		font-weight: 600
+		margin: 0
+
+	&__category
+		
+		&-list
+			list-style: none
+			padding: 0
+			margin: 0
+
+		&-item
+			margin-right: 16px
+
+			&:last-child
+				margin-right: 0
+
+		&-link
+			text-decoration: none
+			color: $text-grey
+			font-size: 13px
+			line-height: 23px
+			font-weight: 400
+			
+			&:hover
+				text-decoration: underline
+
+			&--active
+				color: $shark
+				
+				&:hover
+					text-decoration: none
+	
+	&__archive
+		text-decoration: none
+		color: $text-grey
+		font-size: 13px
+
+		&:hover
+			text-decoration: underline
