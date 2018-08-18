@@ -21,17 +21,44 @@
 		position: absolute
 	
 	&__car-1
+		opacity: 0
 		bottom: 265px
 		left: 180px
+	
+		&.active
+			bottom: 25px
+			left: 615px
+			opacity: 1
+			transition: all 3s ease
 
 	&__car-2
-		bottom: 270px
-		left: 685px
+		opacity: 0
+		bottom: 370px
+		left: 510px
+		
+		&.active
+			bottom: 165px
+			left: 870px
+			opacity: 1
+			transition: all 3s ease
+
 
 	&__pin-1
-		top: 230px
+		opacity: 0
+		top: 0
 		left: 280px
 
+		&.active
+			opacity: 1
+			top: 230px
+			transition: all 2s ease
+
 	&__pin-2
-		top: 180px
+		opacity: 0
+		top: 0
 		right: 250px
+
+		&.active
+			opacity: 1
+			top: 180px
+			transition: all 1.8s ease
