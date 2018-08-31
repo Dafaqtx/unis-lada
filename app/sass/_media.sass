@@ -1,0 +1,238 @@
+@import "vars"
+
+@media screen and (max-width: $tablet-size)
+	.tablet-show
+		display: block
+
+	.container
+		max-width: 768px
+
+	.header
+
+		&__contacts,
+		&__call,
+		&__sms,
+		&__operators,
+		&__social,
+		&__sidebar
+			display: none !important
+
+		&__logo
+			margin-right: calc(50% - 300px) 
+
+		&__search
+			margin-left: auto
+
+			&--open
+				max-width: 350px
+				border-bottom: 1px solid $text-grey
+
+				& .header__search-input
+					width: calc(100% - 26px)
+
+			&-input::placeholder
+				color: transparent
+
+		&__sign-in
+			margin-right: 30px 
+
+		&__union
+			margin-top: 10px
+
+		&__modal
+			width: 100vw
+			height: 100vh
+			position: fixed
+			top: 0
+			background: $bg-grey
+			z-index: 99
+			box-sizing: border-box
+			padding: 80px 50px 50px 50px
+			transform: translateY(-100%)
+			transition: transform .3s ease
+
+			&--active
+				transform: translateY(0)
+				transition: transform .3s ease
+
+			&-menu
+				flex: 1
+
+				&-list
+					padding: 0
+					margin: 0
+					list-style: none
+
+				&-item
+					line-height: 54px
+
+				&-link
+					color: $shark
+					font-size: 16px
+					text-decoration: none
+			
+			&-info
+				flex: 1
+
+				&-call
+					margin-bottom: 40px
+
+				&-operators
+					margin-bottom: 40px
+
+				&-tel
+					margin-bottom: 40px
+
+				&-sms
+					margin-bottom: 40px
+
+				&-apps
+					margin-bottom: 40px
+
+			&-close
+				position: absolute
+				right: 50px
+				top: 20px
+				padding: 5px
+
+	.calc
+		background: $bg-grey
+		padding-bottom: 50px
+
+		&__menu-item
+			font-size: 16px
+			margin-right: 40px 
+
+		&__info
+			display: none
+
+			&-app
+				max-width: 130px
+				width: 100%
+
+				&:first-child
+					margin-right: 10px
+
+				& img
+					width: 100%
+
+				&--wrapper
+					display: flex
+					justify-content: center
+					margin-top: 40px
+
+		&__menu
+			justify-content: space-between
+
+			&-item
+				margin: 0
+
+		&__form
+
+			&--container
+				width: 100%
+
+			&-examples
+				display: none
+
+			&-arrows
+				display: none
+
+			&-input
+				width: 100%
+				margin-bottom: 20px
+
+				&--add
+					margin-top: 0
+
+					& input
+						margin-top: 0
+
+			&-time
+				margin: 32px auto
+
+			&-add
+				margin: auto
+
+				&--address
+					max-width: 105px
+
+				&-comment
+					max-width: 160px
+
+					&--open
+						margin-top: 20px
+		
+			&-submit
+				flex-direction: column
+				margin-top: 32px
+
+				&-btn
+					margin-bottom: 35px
+
+				&-bonus
+					margin: 0
+
+	.why-we
+
+		&__items
+			justify-content: flex-start
+			margin-top: 0
+
+		&__item
+			max-width: 170px
+			margin-top: 50px
+
+			&:nth-child(3)
+				margin-right: 0
+
+		&__about
+			margin-top: 30px
+
+			&--left
+				flex: 1
+				max-width: 330px
+				margin-right: 20px
+
+			&--right
+				flex: 1
+				max-width: 330px
+
+	.animation-block
+
+		&__bg
+			display: none
+
+		&--mobile
+			margin-top: -30px
+
+	.actions
+
+		&__item img
+			margin: auto
+
+	.call-taxi
+
+		&__items
+			justify-content: flex-start
+	
+		&__item
+			min-width: 180px
+			max-width: 200px
+			margin-bottom: 40px
+
+		&__app
+			display: none
+
+			&--mobile
+				display: flex
+				margin-top: 20px
+
+
+				
+
+
+@media (max-width: $mobile-size)
+	.header__sign-in
+		color: transparent
+		width: 0
