@@ -228,9 +228,95 @@
 				display: flex
 				margin-top: 20px
 
+	.drivers
 
+		&__heading
+			flex-direction: column
+			align-items: flex-start
+
+		&__btn
+			margin: 0
+			margin-top: 45px
+
+		&__offer
+			margin-top: 30px
+			background-position-y: top
+			padding-top: 420px
+			height: 420px
+
+			&-title
+				color: $text
+				padding-top: 120px
+
+	.d-advantages
+
+		&__item
+			flex: 1
+			margin-right: 30px
+
+			&:last-child
+				margin-right: 0
+
+	.d-cooperation
+
+		&__tabs-content-col
+			flex: 1
+			margin-right: 50px
+
+			&:last-child
+				margin-right: 0			
+
+	.d-more-information
+
+		&__tabs
+
+			&-list
+				flex-wrap: nowrap
+
+			&-item
+				margin-right: 14px
+				font-size: 16px
+
+				&:last-child
+					margin-right: 0
+
+			&-content
+				margin-top: 60px
+
+				&-col
+					flex: 1
+					margin-right: 40px
+
+					&:last-child
+						margin-right: 0
+
+	.d-call
+
+		&__item
+			margin-right: 50px
+			width: 210px
+
+			&:nth-child(3)
+				margin-right: 0
+
+	.d-faq
+
+		&__accordion
+
+			&-list
 				
 
+			&-item
+				max-width: calc(100% - 60px)
+
+				&::after
+					right: -30px
+					top: 5px
+
+				&.d-accordion__item--active
+
+					&:after
+						right: -30px
 
 @media (max-width: $mobile-size)
 	.header__sign-in
