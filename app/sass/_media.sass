@@ -217,13 +217,12 @@
 			img
 				margin: auto
 
-				
-
 		&__excerpt
 			left: 50%
 			transform: translateX(-50%)
 			bottom: 0
 			text-align: center
+			width: 100%
 
 		&__category
 			left: 50%
@@ -231,7 +230,6 @@
 			bottom: 70px
 			top: auto
 			text-align: center
-
 
 	.call-taxi
 
@@ -379,6 +377,211 @@
 				margin-right: auto
 
 @media (max-width: $mobile-size)
-	.header__sign-in
-		color: transparent
-		width: 0
+	.header
+
+		&__slogan
+			display: none
+
+		&__sign-in
+			color: transparent
+			width: 0
+
+		&__modal
+			display: flex
+			align-items: center
+			justify-content: center
+		
+			&-info
+				display: none
+
+			&-close
+				top: 0
+				right: 10px
+
+	.calc
+
+		&__menu
+			flex-direction: column
+			align-items: center
+		
+			&-item
+
+				&.d-tabs__item--active
+					font-weight: 600
+					font-size: 18px
+					color: $accent
+
+				&.d-tabs__item--active::before,
+				&.d-tabs__item--active::after
+					content: none
+
+	.why-we
+		margin-top: 50px
+
+		&__title
+			text-align: center
+
+		&__items
+			display: block
+
+		&__item
+			margin: auto
+			margin-top: 30px
+
+			&:nth-child(3)
+				margin-right: auto 
+
+			&:last-child
+				margin-right: auto
+
+		&__img img
+			margin: auto
+
+		&__desc
+			text-align: center
+
+		&__about
+			flex-direction: column
+
+			&--left,
+			&--right
+				max-width: 100%
+				text-align: center
+				margin-top: 20px
+
+	.animation-block
+
+		&__title
+			text-align: center
+
+		&__bg--mobile
+			display: none
+
+	.call-taxi
+
+		&__title
+			text-align: center
+
+		&__items
+			display: block
+
+		&__item
+			margin: 0 auto 40px auto
+
+			&:last-child
+				margin-right: auto
+
+		&__img img
+			margin: auto
+
+		&__desc
+			text-align: center
+
+		&__app
+
+			&--mobile
+				align-items: center
+				justify-content: space-between
+
+			&--img
+				margin: 0
+
+	.reviews
+
+		&__item
+			margin-right: 0
+
+	.patrners
+
+		&__item
+			margin-right: auto
+			margin: auto
+
+			& img
+				margin: auto
+
+	.page-footer
+
+		&--wrapper
+			flex-direction: column
+			align-items: center
+
+		&__col
+			width: 100%
+			text-align: center
+			margin-bottom: 30px
+
+		&__logo
+			max-width: 200px
+			margin: auto
+			margin-bottom: 20px
+
+		&__call
+			justify-content: center
+
+		&__mobile
+			margin-top: 20px
+
+			&-numbers
+				justify-content: space-between
+				max-width: 300px
+				margin: auto
+				margin-top: 5px
+
+			&-number
+				margin: 0
+		
+		&__apps
+			justify-content: space-around
+			max-width: 290px
+			margin: auto
+
+		&__app
+			max-width: 150px
+
+			& img
+				max-width: 100%
+				width: 130px
+		
+		&__social
+			justify-content: center
+			align-items: center
+
+		&__sms
+			margin-top: 30px
+
+		&__bottom
+			flex-direction: column
+			margin-top: 0
+
+		&__copy
+			order: 1
+			margin-bottom: 20px
+
+		&__sitemap
+			order: 2
+			margin-bottom: 20px
+
+		&__dev
+			order: 3
+			padding: 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
