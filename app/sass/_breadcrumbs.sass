@@ -11,6 +11,25 @@
 		margin-right: 20px
 		font-size: 13px
 		font-weight: 400
+		position: relative
+
+		&::before
+			content: ''
+			position: absolute
+			left: -13px
+			top: 8px
+			width: 5px
+			height: 5px
+			background: transparent
+			border: 1px solid $text-grey
+			border-left: none
+			border-top: none
+			transform: rotate(-45deg)
+
+		&:first-child
+
+			&::before
+				content: none
 
 		&:last-child
 			margin-right: 0
