@@ -95,37 +95,45 @@
 
 	<main>
 		<section class="sign-in">
-            <div class="container column">
-                <header>
-                    <h1 class="sign-in__title">Добро пожаловать!</h1>
-                </header>
-                <form action="/" method="post" class="sign-in__form" id="sign-in__form">
-                    <div class="sign-in--wrapper flex">
-                        <div class="sign-in__col">
+			<div class="container column">
+				<header>
+						<h1 class="sign-in__title">Добро пожаловать!</h1>
+				</header>
+				<form action="/" method="post" class="sign-in__form" id="sign-in__form">
+						<div class="sign-in--wrapper flex">
 							<div class="sign-in__input--wrapper">
-								<input type="text" class="sign-in__input sign-in__input--name" name="login" placeholder="Логин">
+									<input type="text" class="sign-in__input sign-in__input--name" name="login" placeholder="Логин">
 							</div>
-                            <label class="sign-in__label flex">
-								<input type="checkbox" class="sign-in__input--checkbox" name="remember">
-								<span class="sign-in__checkbox"></span>
-                                <span class="sign-in__label-text">Запомнить меня</span>
-                            </label>
-                            <button class="sign-in__submit" type="submit">Войти</button>
-                        </div>
-                        <div class="sign-in__col">
+							<!-- /.sign-in__input--wrapper -->
+
 							<div class="sign-in__input--wrapper">
 									<input type="password" class="sign-in__input sign-in__input--pass" name="pass" placeholder="Пароль">
 							</div>
-                            <a class="sign-in__forgot" href="#">Забыли пароль?</a>
-                        </div>
-                    </div>
-                </form>
-                <div class="sign-in__registration">
-                    У меня нет аккаунта. <a class="sign-in__registration-link" href="#">Зарегистрироваться.</a>
-                </div>
-               
-            </div>
-        </section>
+							<!-- /.sign-in__input--wrapper -->
+
+							<div class="sign-in__footer">
+								<div class="sign-in--wrapper-bottom flex flex__align-middle">
+									<label class="sign-in__label flex">
+											<input type="checkbox" class="sign-in__input--checkbox" name="remember">
+											<span class="sign-in__checkbox"></span>
+											<span class="sign-in__label-text">Запомнить меня</span>
+									</label>
+									<a class="sign-in__forgot" href="#">Забыли пароль?</a>
+								</div>
+								<button class="sign-in__submit" type="submit">Войти</button>
+							</div>
+							<!-- /.sign-in__footer -->
+
+						</div>
+						<!-- /.sign-in--wrapper -->
+
+				</form>
+				<div class="sign-in__registration">
+						У меня нет аккаунта. <a class="sign-in__registration-link" href="#">Зарегистрироваться.</a>
+				</div>
+					
+			</div>
+    </section>
 
 	</main>
 
